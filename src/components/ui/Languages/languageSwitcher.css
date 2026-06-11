@@ -1,0 +1,30 @@
+.header__lang {
+  position: relative;
+  z-index: 9999;
+}
+
+.header__select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.header__select.header__select--open .sortdown {
+  transform: rotate(180deg);
+}
+
+.header__select.header__select--open ~ .menu {
+  position: absolute;
+  padding: 10px 10px;
+  background-color: rgba(0,0,0,0.80);
+  right: 0;
+  left: 0;
+  cursor: pointer;
+  display: block;
+}
+
+.menu {
+  display: none;
+}

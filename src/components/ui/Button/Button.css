@@ -1,0 +1,14 @@
+.btn- {
+  display: flex;
+  padding: 18px 24px;
+  gap: 10px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: .72px;
+  border-radius: 16px;
+  justify-content: center;
+  transition: .2s;
+  animation-duration: .2s;
+}

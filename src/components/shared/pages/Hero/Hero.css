@@ -1,0 +1,90 @@
+:root {
+  --backgroundHero: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+  url('https://www.gtavice.net/content/images/rockstar-games-official-street-artwork-with-trees-and-background.png') no-repeat center / cover;
+  --btnGradient: linear-gradient(135deg, #ff2d55 0%, #ff7a18 100%);
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background: var(--backgroundHero);
+  padding: 160px 130px;
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  gap: 34px;
+}
+
+.hero__wrapper h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 60px;
+  text-wrap: nowrap;
+  margin: 0;
+}
+
+.hero__description {
+  min-width: 255px;
+  color: white;
+}
+
+.hero__description p {
+  font-weight: 700;
+  letter-spacing: .9px;
+}
+
+.hero__btn--container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hero__btn--container #hero__btn--howtostart {
+  background: var(--btnGradient);
+  text-wrap: nowrap;
+  color: white;
+}
+
+.hero__btn--container #hero__btn--review {
+  background: #f03;
+  width: 100%;
+}
+
+.text-i {
+  letter-spacing: 0.9px;
+  margin: 0;
+  color: #ffffff55;
+  text-wrap: nowrap;
+  font-size: 0.9rem;
+}
+
+.text-c {
+  letter-spacing: 0.9px;
+  margin: 0;
+  color: white;
+  text-wrap: nowrap;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .hero__description {
+    max-width: 345px;
+  }
+  .hero__wrapper h1 {
+    font-size: 90px;
+  }
+  .hero__wrapper h4 {
+    font-size: 22px;
+  }
+  .hero__btn--container {
+    flex-direction: row;
+    gap: 34px;
+  }
+}

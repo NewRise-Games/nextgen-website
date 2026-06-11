@@ -1,0 +1,14 @@
+{
+  "navigation": {
+    "main": "Main",
+    "forum": "Forum",
+    "howtostart": "How to start playing?",
+    "donate": "Donate"
+  },
+  "hero": {
+    "description": "The unique NEXTGEN ROLE PLAY project was created to realize your goals and the game scenarios you create yourself"
+  },
+  "button": {
+    "howtostart": "How to start playing?"
+  }
+}

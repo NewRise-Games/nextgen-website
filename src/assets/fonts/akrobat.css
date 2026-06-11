@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Akrobat';
+  font-weight: 100;
+  src: url('./Akrobat-Thin.otf');
+}
+
+@font-face {
+  font-family: 'Akrobat';
+  font-weight: 200;
+  src: url('./Akrobat-ExtraLight.otf');
+}
+
+@font-face {
+  font-family: 'Akrobat';
+  font-weight: 300;
+  src: url('./Akrobat-Light.otf');
+}
+
+@font-face {
+  font-family: 'Akrobat';
+  font-weight: 400;
+  src: url('./Akrobat-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Akrobat';
+  font-weight: 600;
+  src: url('./Akrobat-SemiBold.otf');
+}
+
+@font-face {
+  font-family: 'Akrobat';
+  font-weight: 700;
+  src: url('./Akrobat-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Akrobat';
+  font-weight: 800;
+  src: url('./Akrobat-ExtraBold.otf');
+}
+
+@font-face {
+  font-family: 'Akrobat';
+  font-weight: 900;
+  src: url('./Akrobat-Black.otf');
+}
