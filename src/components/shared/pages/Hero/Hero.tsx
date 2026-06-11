@@ -1,6 +1,5 @@
 import { FaGamepad } from 'react-icons/fa'
 import { Button } from '../../../ui/Button/Button'
-import { IoPlay } from "react-icons/io5";
 import './Hero.css'
 import { useTranslation } from 'react-i18next';
 

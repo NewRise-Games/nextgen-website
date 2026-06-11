@@ -1,9 +1,8 @@
 import './Monitoring.css'
-import type { MonitorProps } from '../../@types/monitor';
 import useServer from '../../../../data/server';
 import { FaUsers } from "react-icons/fa";
 
-export const Monitoring: React.FC<MonitorProps> = ({ online }) => {
+export const Monitoring: React.FC = () => {
   const { data, loading, error } = useServer();
 
   if (loading) {
