@@ -1,5 +1,3 @@
-export const Loading: React.FC = () => {
-  return (
-
-  )
+export default function Loading() {
+  return <div>Loading...</div>;
 }
