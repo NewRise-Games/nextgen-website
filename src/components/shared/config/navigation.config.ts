@@ -13,7 +13,7 @@ export const useNavigationConfig = (): Props[] => {
     {
       id: 1,
       label: t("navigation.forum"),
-      path: "http://localhost:5173/"
+      path: "https://nextgen-forum.vercel.app/"
     },
     {
       id: 2,
