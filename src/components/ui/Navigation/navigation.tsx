@@ -9,7 +9,7 @@ export const Navigation: React.FC = () => {
     <ul>
       {useconfig.map((item) => (
         <li key={item.id}>
-          <NavLink to={item.path}>{item.label}</NavLink>
+          <NavLink to={item.path ?? "/"}>{item.label}</NavLink>
         </li>
       ))}
     </ul>

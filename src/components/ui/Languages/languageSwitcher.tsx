@@ -15,7 +15,7 @@ export const LanguageSwitcher: React.FC = () => {
 
   if (!currentLang || availbleLang.length === 0) return null;
 
-  const changeLanguage = (lng) => {
+  const changeLanguage = (lng: string) => {
     i18next.changeLanguage(lng);
     setActive(false);
   }
