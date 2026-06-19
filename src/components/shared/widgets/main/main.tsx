@@ -1,4 +1,4 @@
-import { Hero, HowToStart, Monitoring } from "../../pages";
+import { Hero, Monitoring } from "../../pages";
 
 export const Main: React.FC = () => {
 
@@ -6,7 +6,6 @@ export const Main: React.FC = () => {
     <main>
       <Hero/>
       <Monitoring/>
-      <HowToStart/>
     </main>
   )
 }
