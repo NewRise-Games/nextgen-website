@@ -1,5 +1,5 @@
 import type { ReactElement } from "react";
-import { Monitoring } from "./components/shared/pages";
+import { Monitoring, Donate } from "./components/shared/pages";
 
 interface RouterProps {
   id: number;
@@ -7,12 +7,17 @@ interface RouterProps {
   element: ReactElement;
 }
 
-export const useRouter = (): RouterProps[] => {
+export const useRouter = () => {
   return [
     {
       id: 1,
       path: "monitoring",
-      element: <Monitoring/>
+      element: <Monitoring />
+    },
+    {
+      id: 2,
+      path: "donate",
+      element: <Donate />
     }
-  ]
-}
+  ];
+};
