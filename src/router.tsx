@@ -1,4 +1,4 @@
-import { Monitoring, Donate } from "./components/shared/pages";
+import { Monitoring, Donate, About } from "./components/shared/pages";
 
 export const useRouter = () => {
   return [
@@ -11,6 +11,11 @@ export const useRouter = () => {
       id: 2,
       path: "donate",
       element: <Donate />
+    },
+    {
+      id: 3,
+      path: "about",
+      element: <About />
     }
   ];
 };

@@ -1,9 +1,13 @@
 import { Hero, Monitoring } from "../../pages";
 
-export const Main: React.FC = () => {
+interface Props {
+  onHowToPlay: () => void;
+}
+
+export const Main: React.FC<Props> = ({ onHowToPlay }) => {
   return (
     <main>
-      <Hero />
+      <Hero onHowToPlay={onHowToPlay} />
       <Monitoring />
     </main>
   );

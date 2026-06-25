@@ -23,7 +23,7 @@ export const useNavigationConfig = (): Props[] => {
     {
       id: 3,
       label: t("navigation.about"),
-      path: "#about"
+      path: "/about"
     }
   ]
 }

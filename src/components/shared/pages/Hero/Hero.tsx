@@ -1,19 +1,22 @@
-import { FaGamepad } from 'react-icons/fa'
-import { Button } from '../../../ui/Button/Button'
-import './Hero.css'
-import { useTranslation } from 'react-i18next';
+import { FaGamepad } from "react-icons/fa";
+import "./Hero.css";
+import { useTranslation } from "react-i18next";
 
-export const Hero: React.FC = () => {
+interface Props {
+  onHowToPlay: () => void;
+}
+
+export const Hero: React.FC<Props> = ({ onHowToPlay }) => {
   const { t } = useTranslation();
 
   return (
     <section className="hero">
       <div className="hero__wrapper">
         <div className="title">
-          <span className="name" role="text" aria-label="NextGen Role Play">
-            <p className="text-i" aria-hidden="true">NextGen Role Play</p>
-            <p className="text-c" aria-hidden="true">NextGen Role Play</p>
-            <p className="text-i" aria-hidden="true">NextGen Role Play</p>
+          <span className="name">
+            <p className="text-i">NextGen Role Play</p>
+            <p className="text-c">NextGen Role Play</p>
+            <p className="text-i">NextGen Role Play</p>
           </span>
         </div>
 
@@ -22,11 +25,16 @@ export const Hero: React.FC = () => {
         </div>
 
         <div className="hero__btn--container">
-          <Button id="hero__btn--howtostart" path="#howtostart" children={t("button.howtostart")}
-          icon={FaGamepad}/>
+          <button
+            id="hero__btn--howtostart"
+            className="hero__btn"
+            onClick={onHowToPlay}
+          >
+            <FaGamepad />
+            {t("button.howtostart")}
+          </button>
         </div>
-
       </div>
     </section>
-  )
-}
+  );
+};

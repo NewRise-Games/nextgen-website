@@ -7,4 +7,5 @@ export interface ButtonProps {
   icon?: IconType;
   children?: ReactNode;
   className?: string;
+  onClick?: () => void;
 }

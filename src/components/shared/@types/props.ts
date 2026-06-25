@@ -1,5 +1,1 @@
-export interface Props {
-  id?: number;
-  isActive?: boolean;
-  onClick?: () => void;
-}
+export interface Props { id?: number; isActive?: boolean; onClick?: () => void; onHowToPlay?: () => void; }
