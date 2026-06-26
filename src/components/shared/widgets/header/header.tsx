@@ -3,9 +3,8 @@ import type { Props } from '../../@types/props';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import './header.css';
-import { Button } from '../../../ui/Button/Button';
+
 import { FaGamepad } from "react-icons/fa6";
-import { PiUsersFourBold } from "react-icons/pi";
 import Logo from '../../../../assets/image/logo.png';
 
 interface HeaderProps extends Props {
@@ -40,13 +39,6 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
 
           <div className="header__button--container">
-            <Button
-              className="header--button button--mnt"
-              path="/#monitoring"
-              children="Monitoring"
-              icon={PiUsersFourBold}
-            />
-
             <button
               className="header--button button--howtostart"
               onClick={onHowToPlay}
